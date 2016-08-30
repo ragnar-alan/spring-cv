@@ -10,3 +10,18 @@ body {
     min-height: 10rem;
     color: rgb(220, 220, 220);   
 }
+
+hr {
+  border-color: #222222 !important;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
+.footer-font-color{
+	color:#222222;
+}
+.img-thumbnail{
+	border-color: #DCDCDC !important;
+	background-color: #DCDCDC !important;
+}
