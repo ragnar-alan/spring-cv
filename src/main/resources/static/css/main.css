@@ -1,0 +1,12 @@
+body {
+	background-image: url('/img/background.png');
+	bakground-repeat-y: no-repeat;
+	bakground-repeat-x: no-repeat;
+}
+
+.main-content{
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    min-height: 10rem;
+    color: rgb(220, 220, 220);   
+}

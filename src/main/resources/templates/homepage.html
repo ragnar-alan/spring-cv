@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/flags.css">
+<script type="text/javascript" src="js/jquery_3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<title>Online CV Boros Tamás</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div th:include="fragments/navbar"></div>
+			</div>	
+		</div>
+		
+		<div class="row-fluid">
+			<div class="col-lg-12 main-content">
+				<h1 th:text="#{menu.myself}"></h1>
+				<div class="row">
+					<div class="col-lg-8">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla erat sit amet velit sagittis ornare. 
+							Nulla quis tellus erat. Praesent sit amet rhoncus nisi, vitae condimentum velit. Proin ac tellus fringilla 
+							ante scelerisque accumsan sed id urna. Suspendisse tristique, sem quis aliquam egestas, nunc arcu volutpat 
+							lorem, sed varius velit ipsum sed massa. Mauris et feugiat felis, in accumsan tortor. Aenean cursus mauris 
+							eget sodales hendrerit. Nam quam augue, ultricies at neque eu, pretium iaculis arcu. Morbi sollicitudin aliquet 
+							ante. Aliquam vitae maximus neque. Suspendisse turpis neque, scelerisque vitae laoreet auctor, volutpat ac lectus. 
+							Praesent lobortis velit dui, at pellentesque nunc volutpat efficitur. Mauris tempor pharetra ligula eget malesuada. 
+							Etiam sollicitudin molestie purus, sed ullamcorper eros aliquam ut. Donec nec ligula fermentum, pulvinar lorem vitae, 
+							convallis dui. Ut sit amet elit tristique, ultrices neque in, pharetra quam.
+						</p>					
+					</div>
+					<div class="col-lg-4">
+					<div class="col-lg-4">
+						<img src="/img/myself.jpg" class="img-thumbnail" alt="Cinque Terre"/>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
