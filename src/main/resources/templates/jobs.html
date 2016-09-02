@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/flags.css">
+<script type="text/javascript" src="js/jquery_3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<title>Online CV Boros Tamás</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div th:include="fragments/navbar"></div>
+			</div>	
+		</div>
+		
+		<div class="row-fluid">
+			<div class="col-lg-12 main-content">
+				<h1 th:text="#{menu.past_jobs}"></h1>
+				
+				<ul>
+					<th:block th:each="job : ${past_jobs}" >
+						<li th:utext='${job.adminName}'>asdf</li>
+						<li th:utext='${job.jobsFeature[0].discription}'>asdf</li>
+					</th:block>
+					
+				</ul>
+				
+				<div class="row">
+					<div class="col-lg-12">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row-fluid">
+			<div class="col-lg-12">
+				<div><hr/></div>
+			</div>
+		</div>
+		
+		<div class="row-fluid">
+			<div class="col-lg-12 footer">
+				<div class="row">
+					<div class="col-lg-4 text-left footer-font-color">
+						Boros Tamás
+					</div>
+					<div class="col-lg-4 text-center footer-font-color" th:utext="#{footer.copyright}">
+					</div>
+					<div class="col-lg-4 text-right footer-font-color">
+						2016
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
