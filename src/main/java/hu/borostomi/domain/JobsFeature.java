@@ -33,7 +33,7 @@ public class JobsFeature implements Serializable {
 	private String displayName;
 	
 	@Column(name="job_f_discription", nullable = false)
-	private String discription;
+	private String description;
 	
 	@Column(name="job_f_competences", nullable = false)
 	private String competencies;
@@ -52,20 +52,6 @@ public class JobsFeature implements Serializable {
 	
 	protected JobsFeature(){}
 
-//	public JobsFeature(Long jobFeatureId, Long jobId, String displayName, String discription, Date competencies,
-//			Byte lang, Date createdAt, Date updatedAt, Date deletedAt) {
-//		super();
-//		this.jobFeatureId = jobFeatureId;
-//		this.jobId = jobId;
-//		this.displayName = displayName;
-//		this.discription = discription;
-//		this.competencies = competencies;
-//		this.lang = lang;
-//		this.createdAt = createdAt;
-//		this.updatedAt = updatedAt;
-//		this.deletedAt = deletedAt;
-//	}
-
 	public Long getJobFeatureId() {
 		return jobFeatureId;
 	}
@@ -74,8 +60,8 @@ public class JobsFeature implements Serializable {
 		return displayName;
 	}
 
-	public String getDiscription() {
-		return discription;
+	public String getDescription() {
+		return description;
 	}
 
 	public String getCompetencies() {
@@ -115,8 +101,8 @@ public class JobsFeature implements Serializable {
 		this.displayName = displayName;
 	}
 
-	public void setDiscription(String discription) {
-		this.discription = discription;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public void setCompetencies(String competencies) {

@@ -21,13 +21,22 @@
 			<div class="col-lg-12 main-content">
 				<h1 th:text="#{menu.past_jobs}"></h1>
 				
-				<ul>
-					<th:block th:each="job : ${past_jobs}" >
-						<li th:utext='${job.adminName}'>asdf</li>
-						<li th:utext='${job.jobsFeature[0].discription}'>asdf</li>
-					</th:block>
-					
-				</ul>
+				<th:block th:each="job : ${past_jobs}" >
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="page-header">
+								<h2>
+									[[ ${job.jobsFeature[0].displayName} ]]
+									<small th:utext="${#dates.format(job.jobStartDate, 'yyyy/MM')} + '-' + ${#dates.format(job.jobEndDate, 'yyyy/MM')}"></small>
+								</h2>								
+							</div>
+							  <div class="card card-block"  th:utext="${job.jobsFeature[0].description}"></div>
+							
+						</div>
+					</div>
+				</th:block>
+				
+				
 				
 				<div class="row">
 					<div class="col-lg-12">&nbsp;</div>

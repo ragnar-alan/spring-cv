@@ -1,14 +1,15 @@
 package hu.borostomi.services;
 
 import java.util.List;
+import java.util.Locale;
 
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 import hu.borostomi.domain.Jobs;
 
 @Component("jobsService")
-@Transactional
+
 public class JobsServiceImpl implements JobsService{
 	
 	private final JobsRepository jobsRepository;
@@ -20,7 +21,7 @@ public class JobsServiceImpl implements JobsService{
 
 	@Override
 	public List<Jobs> listJobs() {
-		
-		return jobsRepository.findAll();
+		Locale locale = LocaleContextHolder.getLocale();
+		return jobsRepository.findAll(locale.toString());
 	}
 }

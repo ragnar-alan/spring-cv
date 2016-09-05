@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 
 @Entity
 @Table(name="jobs")
@@ -31,9 +33,12 @@ public class Jobs implements Serializable {
 	private String adminName;
 	
 	@Column(nullable = false, name="job_start_date")
+	@DateTimeFormat(pattern = "yyyy/MM")
 	private Date jobStartDate;
 	
 	@Column(nullable = false, name="job_end_date")
+	@DateTimeFormat(pattern = "yyyy/MM")
+	
 	private Date jobEndDate;
 	
 	@Column(nullable = false, name="job_company_name")

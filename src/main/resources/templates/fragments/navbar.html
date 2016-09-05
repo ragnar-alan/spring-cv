@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#" class="active" th:text="#{menu.myself}"></a></li>
-        <li><a href="#" th:text="#{menu.past_jobs}"></a></li>
+        <li><a href="/jobs" th:text="#{menu.past_jobs}"></a></li>
         <li><a href="#" th:text="#{menu.reference}"></a></li>
         <li><a href="#" th:text="#{menu.contact}"></a></li>
       </ul>
@@ -29,13 +29,13 @@
 			</a>
           <ul class="dropdown-menu">
             <li>
-            	<a href="./?lang=hu">
+            	<a href="?lang=hu">
             		<span class="line-height" th:text="#{menu.hu}"></span>
             		<p class="flag flag-hu float-right" th:alt="#{menu.hu}"></p>
             	</a>          
             </li>
             <li>
-            	<a href="./?lang=en">
+            	<a href="?lang=en">
             		<span class="line-height" th:text="#{menu.en}"></span>
             		<p class="flag flag-us float-right" th:alt="#{menu.en}"></p>
             	</a>

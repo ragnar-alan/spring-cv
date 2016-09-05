@@ -11,7 +11,7 @@ import hu.borostomi.domain.Jobs;
 @Repository
 public interface JobsRepository extends CrudRepository<Jobs, Long>{
 
-	@Query("select j from Jobs as j left join j.jobsFeature jf")
-	List<Jobs> findAll();
+	@Query("SELECT j FROM Jobs AS j LEFT JOIN j.jobsFeature jf WHERE jf.lang = ?1")
+	List<Jobs> findAll(String lang);
 	
 }
